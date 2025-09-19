@@ -18,6 +18,7 @@
 
             CheckNumber(number);
         }
+           // the method
 
         public void CheckNumber(int number)
         {

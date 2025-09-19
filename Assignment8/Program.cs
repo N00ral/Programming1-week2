@@ -20,21 +20,44 @@
 
             Console.WriteLine("The day of the week is: " + day);
         }
+
+
         string GetDayOfWeek(int dayNumber)
 
-        { return dayNumber switch
-
-        {   
-            1 => "Monday",
-            2 => "Tuesday", 
-            3 => "Wednesday",
-            4 => "Thursday",
-            5 => "Friday",
-            6 => "Saturday",
-            7 => "Sunday",
-            _ => "Invalid input! Please enter a number between 1 and 7." }; 
+        {
+            switch (dayNumber)
+            {
+                case 1:
+                   return("Monday");
+                   
+                case 2:
+                   return("Tuesday");
+                    
+                case 3:
+                   return("Wednesday");
+                    
+                case 4:
+                   return("Thursday");
+                    
+                case 5:
+                    return("Friday");
+                    
+                case 6:
+                    return("Saturday");
+                    
+                case 7:
+                    return("Sunday");
+                    
+                default:
+                   return("Invalid day number! Please enter a number between 1 and 7.");
+                    
+            }
         }
+
     }
 
+
+         
 }
+     
 

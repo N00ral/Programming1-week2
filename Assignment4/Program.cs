@@ -31,12 +31,17 @@
             {
                 case "+":
                     return Add(num1, num2);
+
+
                 case "-":
                     return Subtract(num1, num2);
+
                 case "*":
                     return Multiply(num1, num2);
+
                 case "/":
                     return Divide(num1, num2);
+
                 default:
                     Console.WriteLine("Invalid operator!");
                     return 0;
