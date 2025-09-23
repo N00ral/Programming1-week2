@@ -16,7 +16,8 @@
 
             // method call
             string grade = GetGrade(score);
-            Console.WriteLine("Your letter grade is: " + grade);
+            Console.WriteLine("Your  grade is: " + grade);
+            Console.ReadKey();
         }
 
        public string GetGrade(int score)

@@ -11,17 +11,17 @@
         void Start()
         {
             Console.WriteLine("Enter first number: ");
-            double num1 = double.Parse(Console.ReadLine());
+           int num1 = Convert.ToInt32(Console.ReadLine());  
 
             Console.WriteLine("Enter second number: ");
-            double num2 = double.Parse(Console.ReadLine());
+            int num2 = Convert.ToInt32(Console.ReadLine()); 
 
             Console.WriteLine("Enter an operator (+, -, *, /): ");
             string op = Console.ReadLine();
 
             // Call the calculation method
             double result = Calculate(num1, num2, op);
-            Console.WriteLine("Result: " + result);
+            Console.WriteLine($"Result: {result}");
         }
 
         public double Calculate(double num1, double num2, string operation)
@@ -64,11 +64,7 @@
 
         public double Divide(double a, double b)
         {
-            if (b == 0)
-            {
-                Console.WriteLine("Error: Division by zero is not allowed.");
-                return 0;
-            }
+            
             return a / b;
         }
 

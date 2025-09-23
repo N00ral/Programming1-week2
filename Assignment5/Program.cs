@@ -20,17 +20,19 @@
             int num3 = int.Parse(Console.ReadLine());
 
             // method call
-            int max = FindMaximum(num1, num2, num3);
-            Console.WriteLine("The maximum number is: " + max);
+            int max = FindMax(num1, num2, num3);
+
+            Console.WriteLine($"The maximum number is: {max} ");
         }
 
-          public int FindMaximum(int num1, int num2, int num3)
+          public int FindMax(int num1, int num2, int num3)
 
          {
             int max = num1;
 
             if (num2 > max)
                 max = num2;
+
             if (num3 > max)
                 max = num3;
 
